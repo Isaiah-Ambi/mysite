@@ -1,0 +1,69 @@
+body {
+    background-color: #252525;
+    font-family: Orbitron;
+}
+
+.nav {
+    list-style-type: none;
+    vh: 100%;
+    a {
+        color: #9e9c9c;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+}
+#profile {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    color: #9e9c9c;
+    
+}
+
+.content {
+    transition: all 1s ease-in;
+}
+
+span {
+    font-size: 1rem;
+}
+
+.circular-rectangle {
+    display: inline-block;
+    position: relative;
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 1000;
+}
+
+.profile-img {
+    /* width: 10em; */
+    /* border-radius: 48%; */
+}
+.skills_top {
+    display: inline;
+    font-size: 8rem;
+}
+
+.skills {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+
+
+.contact {
+    padding-left: 1.4em;
+    max-width: 6em;
+    min-width: 3em;
+}
