@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah Ambi</title>
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <ul class="nav">
+            <li><a href="/" hx-get="/index" hx-target="#profile">Home</a></li>
+            <li><a href="/about" hx-get="/about" hx-swap="outerHTML transition:true" hx-target="#profile">About me</a></li>
+            <li><a href="/education" hx-swap="outerHTML transition:true" hx-get="/education" hx-target="#profile">Education</a></li>
+            <li><a href="#" hx-get="/projects" hx-swap="outerHTML transition:true" hx-target="#profile">Projects</a></li>
+            <!-- <li><a href="/skills" hx-get="/projects" hx-target="#profile">Skills</a></li> -->
+            <li><a href="/contact" hx-get="/contact" hx-swap="outerHTML transition:true" hx-target="#profile">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="profile" class="content">
+        
+        <div>
+            <h1 class="name">Isaiah Ambi</h1>
+            <h1>Web Developer & Aspiring Video Game Composer<span>(for now)</span></h1>
+            <!-- <p>Jos, Nigeria</p> -->
+            
+                <span> Python | Django | Html | Css | Javascript | Node JS | Express JS | Mongoose JS | MongoDb ...</span>
+            
+        </div>
+        
+    </div>
+<script src="public/htmx.min.js"></script>
+<script src="public/index.js"></script>
+</body>
+</html>

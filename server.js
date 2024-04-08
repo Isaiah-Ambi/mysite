@@ -7,6 +7,10 @@ app.set('view engine', 'ejs')
 app.use('/public',express.static('public'));
 
 app.get('/', (req, res) =>{
+    res.render('base');
+})
+
+app.get('/index', (req, res) =>{
     res.render('index');
 })
 
@@ -34,3 +38,5 @@ app.get('/contact', (req, res) =>{
 app.listen(3000,()=>{
     console.log('listening')
 })
+
+module.exports = app;
